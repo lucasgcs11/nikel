@@ -2,6 +2,11 @@ const myModal = new bootstrap.Modal("#register-modal");
 let logged = sessionStorage.getItem("logged");
 const session = localStorage.getItem("session");
 
+
+/* 1 - Verificar se existe um usuário já logado
+    2- Se exisitir um usuário logado, direcionar para a página de home
+    3 - Caso contrário, manter o usuário na página de login
+*/
 checkLogged();
 
 //LOGAR NO SISTEMA
